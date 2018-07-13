@@ -26,7 +26,6 @@ public class Restriction {
 
 	public void setName(String name) {
 		this.name = name;
-		return;
 	}
 
 	public String getValue() {
@@ -35,7 +34,6 @@ public class Restriction {
 
 	public void setValue(String value) {
 		this.value = value;
-		return;
 	}
 
 	public String getCondition() {
@@ -44,7 +42,6 @@ public class Restriction {
 
 	public void setCondition(String condition) {
 		this.condition = condition;
-		return;
 	}
 
 	public String toString() {
