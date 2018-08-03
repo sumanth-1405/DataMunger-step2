@@ -2,6 +2,7 @@ package com.stackroute.datamunger.query.parser;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /*There are total 4 DataMungerTest file:
  * 
@@ -67,7 +68,7 @@ public class QueryParser {
 	 * query till the where clause
 	 */
 	public String getBaseQuery(String queryString) {
-		String[] baseQuery = queryString.toLowerCase().trim().split(" where ");
+		String[] baseQuery = queryString.toLowerCase(Locale.ENGLISH).trim().split(" where ");
 		return baseQuery[0];
 	}
 
